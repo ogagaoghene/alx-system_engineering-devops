@@ -1,1 +1,3 @@
-First bash script prints the current working directory
+#!/bin/bash
+pwd
+
