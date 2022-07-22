@@ -2,14 +2,14 @@
 # This script is displaying "Best School" 10 times using the while loop,
 # but for the 9th iteration, displays Best School and then Hi on a new 
 
-COUNTER=0
-while [ $COUNTER -lt 11 ]
+counter=1
+
+while [ $counter -le 11 ]
 do
-    if [ $COUNTER = 10 ]
-    then
-        echo "Hi"
-    else
-        echo "Best School"
-    fi
-    let COUNTER+=1
+    echo "Best School"
+        if [ $counter -eq 10 ]
+        then
+            echo "Hi"
+	fi
+    ((counter++))
 done
