@@ -6,12 +6,12 @@
 COUNTER=0
 while [ $COUNTER -lt 10 ]
 do
-    if [ $COUNTER = 8 ]
+    if [ $COUNTER -eq 8 ]
     then
         echo "Hi"
     else
         echo "Best School"
     fi
-    let COUNTER+=1
+    let COUNTER = COUNTER + 1
 done
 
