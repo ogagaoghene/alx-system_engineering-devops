@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# displays Best School 10 times.
 
-COUNTER=0
-while [ $COUNTER -lt 10 ]
+counter=1
+
+while [ $counter -le 10 ]
 do
-    echo "Best School"
-    let COUNTER=COUNTER+1
+	echo "Best School"
+	((counter++))
 done
