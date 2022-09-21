@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 # Fix the bug in apache 2
-sudo /etc/init.d/apache2 start
+sudo dnf install httpd
+sudo systemctl start httpd
+sudo systemctl status httpd
+sudo systemctl enable --now httpd
